@@ -119,13 +119,13 @@ Write a C program to perform addition and subtraction of two numbers using funct
 ## PROGRAM:
 ```
 #include<stdio.h>
-int addition(int a,int b)
+void addition(int a,int b)
 {
-return a+b;
+printf("addition: %d",a+b);
 }
-int substraction(int a,int b)
+void substraction(int a,int b)
 {
-return a-b;
+printf("Subtraction : %d",a-b);
 }
 int main()
 {
@@ -133,8 +133,6 @@ int a,b;
 scanf("%d%d",&a,&b);
 int result_addition=addition(a,b);
 int result_substraction=substraction(a,b);
-printf("Addition: %d\n",result_addition);
-printf("Subtraction: %d",result_substraction);
 }
 ```
 ## OUTPUT:
